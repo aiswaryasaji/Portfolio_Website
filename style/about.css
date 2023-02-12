@@ -1,0 +1,290 @@
+:root{
+    --bg-black-900:#000000;
+    --bg-black-100:#dddddd;
+
+    --bg-black-50:#eff0f4;
+    --text-black-900:#000000;
+    --text-black-700:#555555;
+    --text-black-600:#666666;
+    --text-black-300:#bbbbbb;
+    --outer-shadow:3px 3px 3px #d0d0d0,-3px -3px 3px #f8f8f8;
+    --outer-shadow:0 0 0 #d0d0d0d,0 0 0 #f8f8f8;
+    --inner-shadow:inset 3px 3px 3px #d0d0d0,inset -3px -3px 3px #f8f8f8;
+}
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    overflow-x: hidden;
+    background-color:#F7F9F9;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+.logo a{
+    text-decoration: none;
+    color: var(--skin-color);
+    border: 2px solid var(--skin-color);
+    font-size: 25px;
+    margin-left: 30px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-family: 'Jacques Francois Shadow', cursive;
+}
+.header{
+    padding: 20px 15px;
+}
+.nav{
+    margin-top: 15px;
+    float: right;
+    list-style: none;
+     font-weight: bold;
+     cursor: pointer;
+     color: var(--skin-color);
+}
+.nav li{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 30px;
+    font-family: 'Jacques Francois Shadow', cursive;
+}
+.nav a{
+    text-decoration: none;
+    color: var(--text-black-600);
+}
+.nav a:hover{
+    color: var(--skin-color);
+}
+.home_section .fullscreen{
+    padding: 50px 0;
+
+}
+.home_section .image img{
+    margin-top: 50px;
+    margin-left: 150px;
+    width: 320px;
+  height:320px;
+  border:2px solid #fff;
+  background: url(img/duck.png) no-repeat;
+  -moz-box-shadow: 0px 6px 5px #ccc;
+  -webkit-box-shadow: 0px 6px 5px #ccc;
+  box-shadow: 0px 6px 5px #ccc;
+  border-radius: 50%;
+  
+}
+.home_section .header_section h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+    font-family: 'Jacques Francois Shadow', cursive;
+    color: var(--skin-color);
+}
+.home_section .text_section p{
+    float:right;
+    color:black;
+    width: 50%;
+    margin-top: -350px;
+    margin-right: 130px;
+    margin-left: -70px;
+    font-size: 20px;
+    font-family: 'Rasa', serif;
+    font-weight: 500;
+}
+.home_section .text_section .button{
+    padding: 10px 10px;
+    border-radius: 80%;
+    float: right;
+    margin-right: 690px;
+    margin-top: -80px;
+   text-decoration: none;
+   background-color: var(--bg-black-50);
+   font-size: 20px;
+   font-family: 'Grenze Gotisch', cursive;
+   font-weight: bold;
+   color: var(--skin-color);
+   border:2px solid var(--bg-black-50);
+  background: url(img/duck.png) no-repeat;
+  -moz-box-shadow: 0px 6px 5px #ccc;
+  -webkit-box-shadow: 0px 6px 5px #ccc;
+  box-shadow: 0px 6px 5px #ccc;
+}
+.button:active {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}
+.effect-wrap .effect{
+    position: absolute;
+    z-index: -1;
+}
+.effect-2{
+    border-top: 30px solid transparent;
+    border-left: 30px solid #08d79c;
+    left: 5%;
+    bottom: 10%;
+    animation: spin 15s linear infinite;
+}
+.effect-2::before{
+    content: " ";
+    border-top: 30px solid transparent;
+    border-left: 30px solid #06d79c;
+    position: absolute;
+    opacity: 0.5;
+    left: -35px;
+    top: -25px;
+}
+.effect-3{
+    border-top: 30px solid transparent;
+    border-left: 30px solid #08d79c;
+    right: 10%;
+    top: 20%;
+    animation: spin 15s linear infinite;
+}
+.effect-3::before{
+    content: " ";
+    border-top: 30px solid transparent;
+    border-left: 30px solid #06d79c;
+    position: absolute;
+    opacity: 0.5;
+    left: -35px;
+    top: -25px;
+}
+@keyframes spin{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+.home_section .social_links a{
+    text-decoration: none;
+    margin-left: 50px;
+
+}
+.home_section .social_links{
+    margin-left: 150px;
+    margin-top: 20px;
+   
+}
+ .skill_section .skills_section .header-section h4{
+    text-align: center;
+    color: var(--skin-color);
+    font-size: 30px;
+    margin-top: 60px;
+    font-family: 'Jacques Francois Shadow', cursive;
+    font-weight: bold;
+}
+h2{
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+   
+}
+.skills:not(:last-child){
+    margin-bottom: 30px;
+}
+.details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.bar{
+    position: relative;
+ 
+    border: 2px solid #0d96e0;
+ 
+    border-radius: 20px;
+  
+}
+.bar div{
+    position: relative;
+    width: 0;
+    height: 2px;
+    border-radius: 10px;
+    background-color: #351414;
+   
+ 
+}
+#html-bar{
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 90%;
+    }
+}
+#css-bar{
+    animation: css-fill 2s forwards;
+}
+@keyframes css-fill{
+    100%{
+        width: 75%;
+    }
+}
+#js-bar{
+    animation: js-fill 2s forwards;
+}
+@keyframes js-fill {
+    100%{
+        width: 32%;
+    }
+}
+#jQuery-bar{
+    animation: jQuery-fill 2s forwards;
+}
+@keyframes jQuery-fill{
+    100%{
+        width: 68%;
+    }
+} 
+#back-bar{
+    animation: back-fill 2s forwards;
+}
+@keyframes back-fill{
+    100%{
+        width: 38%;
+    }
+} 
+.contents{
+    width: 50%;
+    margin-top: 50px;
+    float: right;
+   margin-right: 100px;
+   
+}
+.contents span{
+    color: rgb(58, 4, 71);
+    
+}
+.skill_section .image{
+    padding-left: 50px;
+}
+footer {
+    text-align: center;
+    margin-top: 3%;
+    color:#40002d ;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
+}
+.social_links a{
+    text-decoration: none;
+    margin-left: 20px;
+    text-align:  centre;
+}
+ .social_links{
+   
+    margin-top: 20px;
+    padding-bottom: 10px;
+   
+}
